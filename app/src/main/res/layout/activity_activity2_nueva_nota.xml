@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jmrr.tp_blocnotario.Activity2NuevaNota">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_launcher_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center_horizontal"
+            android:text="Block Notario JMR"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="Titulo..."
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="Escriba aqui..."
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:ems="10"
+            android:hint="Fecha..."
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="BtnGuardar_Click"
+            android:text="Guardar"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="138dp" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="VolverMenu"
+            android:text="VOLVER"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="138dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
